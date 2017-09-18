@@ -6,7 +6,5 @@ echo 'Sistema Integro'
 else
 echo 'Sistema Não integro'
 sudo /usr/lib/ini.bin
-#sudo rm -r /usr/lib/jvm/*
-#sudo rm -r /usr/lib/jni/*
 fi
 
