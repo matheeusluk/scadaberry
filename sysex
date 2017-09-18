@@ -4,9 +4,8 @@ while : ; do
     touch /tmp/lockfile
     {
       /usr/bin/scaberry.bin
-      #rm /tmp/lockfile
-      sudo logout
     }
   fi
-  exit 0
+  sleep 10
+  rm /tmp/lockfile
 done
