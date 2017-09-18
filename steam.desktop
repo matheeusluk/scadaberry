@@ -1,0 +1,53 @@
+[Desktop Entry]
+Name=Steam
+Comment=Application for managing and playing games on Steam
+Exec=steam
+Icon=steam
+Terminal=false
+Type=Application
+Categories=Network;FileTransfer;Game;
+MimeType=x-scheme-handler/steam;
+Actions=Store;Community;Library;Servers;Screenshots;News;Settings;BigPicture;Friends;
+
+[Desktop Action Store]
+Name=Store
+Name[pt]=Loja
+Exec=steam steam://store
+
+[Desktop Action Community]
+Name=Community
+Name[pt]=Comunidade
+Exec=steam steam://url/SteamIDControlPage
+
+[Desktop Action Library]
+Name=Library
+Name[pt]=Biblioteca
+Exec=steam steam://open/games
+
+[Desktop Action Servers]
+Name=Servers
+Name[pt]=Servidores
+Exec=steam steam://open/servers
+
+[Desktop Action Screenshots]
+Name=Screenshots
+Exec=steam steam://open/screenshots
+
+[Desktop Action News]
+Name=News
+Name[pt]=Notícias
+Exec=steam steam://open/news
+
+[Desktop Action Settings]
+Name=Settings
+Name[pt]=Configurações
+Exec=steam steam://open/settings
+
+[Desktop Action BigPicture]
+Name=Big Picture
+Exec=steam steam://open/bigpicture
+
+[Desktop Action Friends]
+Name=Friends
+Name[pt]=Amigos
+Exec=steam steam://open/friends
