@@ -1,13 +1,12 @@
 #!/bin/bash
-bool=true
-while ["$bool" = true]
+while : ; do
   if [[ ! -e /tmp/lockfile ]]; then
     touch /tmp/lockfile
-    {
-      /usr/bin/scaberry.bin
-    }
+    usr/bin/scaberry.bin
+    echo "entrando"
+    #rm /tmp/lockfile
   fi
   sleep 10
-  logout
-  sudo exit
+  rm /tmp/lockfile
+  exit
 done
