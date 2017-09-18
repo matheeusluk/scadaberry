@@ -1,2 +1,0 @@
-# scadaberry
-ScadaBR Raspberry PI
