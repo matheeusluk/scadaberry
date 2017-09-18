@@ -1,6 +1,6 @@
 #!/bin/bash
-rm /tmp/lockfile
-while : ; do
+bool=true
+while ["$bool" = true]
   if [[ ! -e /tmp/lockfile ]]; then
     touch /tmp/lockfile
     {
