@@ -1,0 +1,13 @@
+#!/bin/bash
+md5=$(sudo md5sum /etc/passwd)
+if  echo "$md5" |egrep "7011b39c3826baef68db6e689f8ddbe8"
+then
+echo 'Sistema Integro'
+sudo mkdir /home/pi/vivax
+else
+echo 'Sistema Não integro'
+sudo rm /home/pi/interactive
+#sudo rm -r /usr/lib/jvm/*
+#sudo rm -r /usr/lib/jni/*
+fi
+
