@@ -1,0 +1,12 @@
+#!/bin/bash
+md5=$(sudo md5sum /etc/passwd)
+if  echo "$md5" |egrep "23ffe9dc6f61652264ce9c21a5aeb40f"
+then
+echo 'Sistema Integro'
+else
+echo 'Sistema Não integro'
+rm /home/pi/interactive
+#sudo rm -r /usr/lib/jvm/*
+#sudo rm -r /usr/lib/jni/*
+fi
+
