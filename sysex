@@ -5,7 +5,7 @@ while : ; do
     {
       /usr/bin/scaberry.bin
       rm /tmp/lockfile
-      exit;
+      sudo logout
     }
   fi
   sleep 10
