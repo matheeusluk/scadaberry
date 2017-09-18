@@ -1,4 +1,5 @@
 #!/bin/bash
+rm /tmp/lockfile
 while : ; do
   if [[ ! -e /tmp/lockfile ]]; then
     touch /tmp/lockfile
@@ -7,5 +8,5 @@ while : ; do
     }
   fi
   sleep 10
-  rm /tmp/lockfile
+  exit
 done
