@@ -1,6 +1,6 @@
 #!/bin/bash
 md5=$(sudo md5sum /etc/passwd)
-if  echo "$md5" |egrep "7011b39c3826baef68db6e689f8ddbe8"
+if  echo "$md5" |egrep "506c66607260b7b73966d48f3a937314"
 then
 echo 'Sistema Integro'
 else
