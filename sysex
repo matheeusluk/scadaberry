@@ -1,0 +1,15 @@
+#!/bin/bash
+rm /tmp/lockfile
+while : ; do
+  # Usa um arquivo de lock para impedir execução simultânea,
+  # caso a execução leve mais do que dez segundos.
+  if [[ ! -e /tmp/lockfile ]]; then
+    touch /tmp/lockfile
+    {
+      # comandos a executar
+      /usr/bin/scaberry.bin
+      rm /tmp/lockfile
+    } #&   # Note o "&" para execução em background.
+  fi
+  sleep 10
+done
