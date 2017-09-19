@@ -3,10 +3,9 @@ while : ; do
   if [[ ! -e /tmp/lockfile ]]; then
     touch /tmp/lockfile
     /usr/bin/scaberry.bin
-    echo "entrando"
-    #rm /tmp/lockfile
   fi
   sleep 10
   sudo rm /tmp/lockfile
+  echo "Ate Logo!! ScadaBerry"
   exit;
 done
