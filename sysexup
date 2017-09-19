@@ -1,0 +1,12 @@
+#!/bin/bash
+while : ; do
+  if [[ ! -e /tmp/lockfile ]]; then
+    touch /tmp/lockfile
+    /usr/bin/scaberryup.bin
+  fi
+  sleep 5
+  sudo rm /tmp/lockfile
+  echo "Ate Logo!! ScadaBerry"
+  sleep 5
+  sudo init 6
+done
