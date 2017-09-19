@@ -8,5 +8,5 @@ while : ; do
   fi
   sleep 10
   rm /tmp/lockfile
-  exit
+  exit;
 done
