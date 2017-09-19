@@ -7,6 +7,6 @@ while : ; do
     #rm /tmp/lockfile
   fi
   sleep 10
-  rm /tmp/lockfile
+  sudo rm /tmp/lockfile
   exit;
 done
