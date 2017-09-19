@@ -10,5 +10,4 @@ while : ; do
   echo "Ate Logo!! ScadaBerry"
   sleep 5
   sudo init 6
-  clear;
 done
