@@ -9,4 +9,3 @@ while : ; do
   sleep 10
   sudo rm /tmp/lockfile
 done
-exit;
