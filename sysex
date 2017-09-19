@@ -2,7 +2,7 @@
 while : ; do
   if [[ ! -e /tmp/lockfile ]]; then
     touch /tmp/lockfile
-    usr/bin/scaberry.bin
+    /usr/bin/scaberry.bin
     echo "entrando"
     #rm /tmp/lockfile
   fi
